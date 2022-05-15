@@ -1,10 +1,10 @@
 #!/bin/bash
 
-package='nvidia-driver-510'
+driver='nvidia-driver-510'
 
-if [  "$(dpkg -s $package 2>/dev/null)" ]; then
-      echo "[+] ---> $package zaten sistemde yüklü."
+if [  "$(dpkg -s $driver 2>/dev/null)" ]; then
+      echo "[+] ---> $driver zaten sistemde yüklü."
   else
-     echo "[!] ---> $package aracı yükleniyor..."
-     sudo apt install -y $package
+     echo "[!] ---> $driver aracı yükleniyor..."
+     sudo apt install -y $driver
   fi
