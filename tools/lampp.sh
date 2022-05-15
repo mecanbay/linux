@@ -5,7 +5,7 @@ declare -A lampp=(
     [url]='https://downloadsapachefriends.global.ssl.fastly.net/7.4.29/xampp-linux-x64-7.4.29-0-installer.run?from_af=true'
 )
 
-if [ -f "/opt/lampp/manager-linux-x64.runs" ]; then
+if [ -f "/opt/lampp/manager-linux-x64.run" ]; then
     echo "[+] ---> ${lampp[name]} zaten sistemde yüklü..."
 else
     echo "[!] ---> ${lampp[name]} indiriliyor..."
