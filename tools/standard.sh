@@ -1,13 +1,12 @@
 #!/bin/bash
 
-package=( tilix gedit firefox gedit vlc nomacs guake net-tools curl openvpn kazam flameshot )
+package=(tilix gedit firefox gedit vlc nomacs guake net-tools curl openvpn kazam flameshot)
 
-for a in "${package[@]}"
-do
+for a in "${package[@]}"; do
   if [ "$(dpkg -s $a 2>/dev/null)" ]; then
-      echo "[+] ---> $a zaten sistemde yüklü."
+    echo "[+] ---> $a zaten sistemde yüklü."
   else
-     echo "[!] ---> $a aracı yükleniyor..."
-     sudo apt install -y $a
+    echo "[!] ---> $a aracı yükleniyor..."
+    sudo apt install -y $a
   fi
 done

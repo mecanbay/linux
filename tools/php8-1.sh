@@ -32,10 +32,10 @@ function check_req() {
 
 function add_repository() {
     if [ "$(ls -la /etc/apt/sources.list.d | grep -i ${php[repository]:4:6})" ]; then
-       echo "Repository zaten ekli!..."
+        echo "Repository zaten ekli!..."
     else
-       sudo add-apt-repository ${php[repository]}
-       
+        sudo add-apt-repository ${php[repository]}
+
     fi
 }
 

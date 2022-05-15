@@ -22,5 +22,4 @@ else
     echo ' '
     read -p "Devam etmek Enter'a basın..."
 
-   
 fi
