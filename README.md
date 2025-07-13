@@ -6,4 +6,6 @@ Personal Apps
 bash install.sh
 ```
 
-**Note: Please do not run the script with sudo or as the root user.**
+#### Notes:
+ * Please do not run the script with sudo or as the root user.
+ * Tested on Ubuntu 25.04.
